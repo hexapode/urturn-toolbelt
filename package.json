@@ -31,7 +31,7 @@
     "grunt": "~0.3.17",
     "temporary": "~0.0.5",
     "grunt-contrib-mincss": "~0.3.2",
-    "zip": "~1.1.0"
+    "node-zip": "0.0.2"
   },
   "devDependencies": {  
   },
