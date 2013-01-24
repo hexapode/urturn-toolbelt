@@ -1,0 +1,40 @@
+{
+  "name": "urturn-node-cli",
+  "description": "Command Line Using Node",
+  "version": "0.1.0",
+  "homepage": "",
+  "author": {
+    "name": "Webdoc, Olivier Amblet",
+    "email": "olivier.amblet@webdoc.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://git.assembla.com/urturn-node-cli.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/urturn-node-cli",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "~0.3.17"
+  },
+  "devDependencies": {  
+  },
+  "keywords": [],
+  "preferGlobal": "true",
+  "bin": {
+    "nurturn" : "lib/urturn.js"
+  }
+}
