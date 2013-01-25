@@ -2,8 +2,8 @@
 
 1. Checkout the source
 2. In the project folder type
-2.1 `npm install`
-2.2 `npm link`
+2.1. `npm install`
+2.2. `npm link`
 3. Go to one of your expression folder
-3.1 run `urturn-compressor`
+3.1. run `urturn-compressor`
 4. Manually upload the generated Zip to urturn.com
