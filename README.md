@@ -1,10 +1,9 @@
-# urturn-node-cli
-
-Command Line Using Node
-
 ## Getting Started
-Install the module with: `npm install -g urturn-compressor`
 
-then run urturn-compressor in your expression folder.
-
-Manually upload the resulting ZIP for now.
+1. Checkout the source
+2. In the project folder type
+2.1 `npm install`
+2.2 `npm link`
+3. Go to one of your expression folder
+3.1 run `urturn-compressor`
+4. Manually upload the generated Zip to urturn.com
