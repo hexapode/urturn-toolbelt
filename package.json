@@ -1,5 +1,5 @@
 {
-  "name": "urturn-node-cli",
+  "name": "urturn-compressor",
   "description": "Command Line Using Node",
   "version": "0.1.0",
   "homepage": "",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://git.assembla.com/urturn-node-cli.git"
+    "url": "git://git.assembla.com/urturn-compressor.git"
   },
   "bugs": {
     "url": ""
@@ -20,7 +20,7 @@
       "url": "/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/urturn-node-cli",
+  "main": "lib/urturn-compressor",
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -37,6 +37,6 @@
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "nurturn" : "lib/urturn.js"
+    "urturn-compressor" : "lib/urturn.js"
   }
 }
