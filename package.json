@@ -30,7 +30,7 @@
   "dependencies": {
     "grunt": "~0.3.17",
     "temporary": "~0.0.5",
-    "grunt-css":"~0.5.3"
+    "grunt-contrib-mincss":">0.0.0"
   },
   "devDependencies": {  
   },
