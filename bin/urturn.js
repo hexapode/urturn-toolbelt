@@ -8,12 +8,16 @@
  * Licensed under the MIT license.
  */
 
-var terminal = require('./term.js'),
+var terminal = require('../lib/term.js'),
     program = require('commander'),
-    packager = require('./packager');
+    packager = require('../lib/packager'),
+    fs = require('fs'),
+    path = require('path');
+
+var info = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')));
 
 program
-  .version("0.7.0")
+  .version(info.version)
   .option('--host <host>', 'Specify the host [www.urturn.com]', String, 'www.urturn.com');
 
 program

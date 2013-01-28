@@ -1,18 +1,18 @@
 {
-  "name": "urturn-compressor",
+  "name": "urturn-toolbelt",
   "description": "Command Line Using Node",
-  "version": "0.1.0",
-  "homepage": "",
+  "version": "0.7.0",
+  "homepage": "https://github.com/webdoc/urturn-toolbelt",
   "author": {
     "name": "Webdoc, Olivier Amblet",
     "email": "olivier.amblet@webdoc.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://git.assembla.com/urturn-compressor.git"
+    "url": "git@github.com:webdoc/urturn-toolbelt.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/webdoc/urturn-toolbelt/issues"
   },
   "licenses": [
     {
@@ -39,6 +39,6 @@
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "urturn-compressor" : "lib/urturn.js"
+    "urturn" : "bin/urturn.js"
   }
 }
