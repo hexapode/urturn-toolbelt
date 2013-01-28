@@ -31,7 +31,8 @@
     "grunt": "~0.3.17",
     "temporary": "~0.0.5",
     "grunt-contrib-mincss":">0.0.0",
-    "grunt-contrib-jshint":">0.0.0"
+    "grunt-contrib-jshint":">0.0.0",
+    "commander":"~1.1"
   },
   "devDependencies": {  
   },
