@@ -39,6 +39,6 @@
   "keywords": [],
   "preferGlobal": "true",
   "bin": {
-    "urturn" : "bin/urturn.js"
+    "ur" : "bin/urturn.js"
   }
 }
