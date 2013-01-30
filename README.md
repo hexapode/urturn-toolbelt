@@ -1,3 +1,5 @@
+Copyright Webdoc Inc. 2012, all rights reserved
+
 ## Getting Started
 
 This new command line is very alpha, don't try to use it if your not developping it.
