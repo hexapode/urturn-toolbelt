@@ -12,7 +12,8 @@ var terminal = require('../lib/term.js'),
     program = require('commander'),
     packager = require('../lib/packager'),
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    http = require('http');
 
 var info = JSON.parse(fs.readFileSync(path.join(__dirname, '../package.json')));
 
@@ -31,6 +32,19 @@ program
       host: context.host || context.parent.host
     }, function(){
       terminal.write('Successfuly packaged');
+    });
+  });
+
+program
+  .command('sandbox [path]')
+  .description('start a sandbox server')
+  .option('-p, --port <port>', Number)
+  .action(function(p, context){
+    var port = context.parent.port || context.port || 3333;
+    var expressionDir = path.resolve(p) || process.cwd().toString();
+    var server = require('urturn-sandbox').configure(expressionDir, port);
+    http.createServer(server).listen(server.get('port'), function(){
+      console.log("Express server listening on port " + server.get('port'));
     });
   });
 
