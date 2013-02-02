@@ -32,7 +32,8 @@
     "grunt-contrib-mincss":">0.0.0",
     "grunt-contrib-jshint":">0.0.0",
     "commander":"~1.1",
-    "urturn-sandbox": "git://github.com/webdoc/urturn-sandbox.git"
+    "urturn-sandbox": "git://github.com/webdoc/urturn-sandbox.git",
+    "grunt-remove-logging": ">0.0.0"
   },
   "devDependencies": {  
   },
