@@ -13,6 +13,11 @@ You should still use urturn-cli gem instead of this one (just `gem install urtur
 ### Install the toolbelt
 
 1. Checkout the source
-2. In the project folder type `npm install` then `npm link`
+2. In the toolbelt project folder type `npm install` then `npm link`
 3. Use urturn-toolbelt -h to get more help
-4. Use gem urturn-cli to upload the zip: `urturn -h HOST PATH_TO_ZIP`
+
+### Package your expression
+
+1. Go to your expression folder
+2. `ur package`
+3. Use gem urturn-cli to upload the zip: `urturn -h HOST PATH_TO_ZIP`
