@@ -11,6 +11,7 @@
 var terminal = require('../lib/term.js'),
     program = require('commander'),
     packager = require('../lib/packager'),
+    devmode = require('../lib/devmode'),
     fs = require('fs'),
     path = require('path'),
     http = require('http');
@@ -32,6 +33,18 @@ program
       host: context.host || context.parent.host
     }, function(){
       terminal.write('Successfuly packaged');
+    });
+  });
+
+program
+  .command('devmode [path]')
+  .description('dev mode for expression')
+  .action(function(path, context){
+    path = path || process.cwd();
+    devmode.devmode(terminal, path, {
+      host: context.host || context.parent.host
+    }, function(){
+      terminal.write('Dev mode on');
     });
   });
 
