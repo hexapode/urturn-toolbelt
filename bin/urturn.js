@@ -39,9 +39,11 @@ program
 program
   .command('devmode [path]')
   .description('dev mode for expression')
+  .option('-d, --debug', 'jslint')
   .action(function(path, context){
     path = path || process.cwd();
     devmode.devmode(terminal, path, {
+      debug: context.debug || context.parent.debug,
       host: context.host || context.parent.host
     }, function(){
       terminal.write('Dev mode on');
