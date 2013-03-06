@@ -12,6 +12,7 @@ var terminal = require('../lib/term.js'),
     program = require('commander'),
     packager = require('../lib/packager'),
     devmode = require('../lib/devmode'),
+    Authenticate = require('../lib/authenticate'),
     fs = require('fs'),
     path = require('path'),
     http = require('http');
@@ -34,6 +35,32 @@ program
     }, function(){
       terminal.write('Successfuly packaged');
     });
+  });
+
+program
+  .command('deploy [path]')
+  .description('Deploy the expression')
+  .option('-h, --host <host>', 'Specify server path')
+  .option('-l, --login <login>', 'Server login')
+  .option('-p, --password <password>', 'Server password')
+  .action(function(path, context){
+
+    var authenticate = new Authenticate();
+    var host = context.host || 'pierre.urturn.com';
+    var login = context.login || null;
+    var password = context.password || null;
+    var path = path || process.cwd();
+    if (context.host ) 
+      host = context.host ;
+    authenticate.login(function(){
+      console.log('Packaging Expression....');
+      packager.package(terminal, path, {
+        debug: 0
+      }, function(){
+          console.log('upload Expression');
+          authenticate.uploadExpression(path);
+      });
+    }, host, login, password);
   });
 
 program

@@ -34,7 +34,9 @@
     "commander":"~1.1",
     "urturn-sandbox": "git://github.com/webdoc/urturn-sandbox.git",
     "grunt-remove-logging": ">0.0.0",
-    "grunt-shell": "0.1.4"
+    "grunt-shell": "0.1.4",
+    "cli-color":"0.2.2",
+    "restler":"git://github.com/danwrong/restler.git"
   },
   "devDependencies": {  
   },
